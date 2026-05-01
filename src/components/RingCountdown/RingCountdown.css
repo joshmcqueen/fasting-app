@@ -1,0 +1,64 @@
+.ring-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
+
+.ring-container {
+  position: relative;
+  width: var(--ring-size);
+  height: var(--ring-size);
+}
+
+.ring-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ring-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 4px;
+}
+
+.ring-time {
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--color-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.ring-sublabel {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.ring-percent {
+  font-size: 0.8rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.break-btn {
+  padding: 12px 32px;
+  background: transparent;
+  border: 1.5px solid var(--color-surface-2);
+  border-radius: var(--radius);
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.break-btn:hover {
+  border-color: #f87171;
+  color: #f87171;
+}
